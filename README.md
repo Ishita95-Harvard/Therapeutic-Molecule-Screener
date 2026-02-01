@@ -1,6 +1,15 @@
 # Therapeutic-Molecule-Screener
 Screen compounds for target activity with TxGemma, then use MedGemma to find relevant literature. Value: Accelerates early-stage drug discovery.
 
+graph LR
+    A[Input Molecules] --> B[TxGemma];
+    B --> C[Activity Prediction];
+    C --> D[Top Candidates];
+    D --> E[MedGemma RAG];
+    E --> F[Literature Summary];
+    F --> G[Final Report];
+
+    
 # 🧬 Therapeutic Molecule Scanner
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app.streamlit.app/)
